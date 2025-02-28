@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - RAAMAL</title>
+    <link rel="stylesheet" href="/ADAINT_RAAMAL/css/registro.css">
+
+    <link rel="stylesheet" href="/ADAINT_RAAMAL/css/style.css">
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/ADAINT_RAAMAL/images/logo.png" alt="Logo" class="logo-img"> 
+            <span>RAAMAL</span>
+        </div>
+        <div class="menu">
+            <a href="/ADAINT_RAAMAL/paginas/registrarse.html">Más ▾</a>
+            <a href="/index.html">INICIO</a>
+            
+            <a href="/ADAINT_RAAMAL/paginas/asociados.html">ASOCIADOS</a>
+            <a href="/ADAINT_RAAMAL/paginas/nosotros.html">NOSOTROS</a>
+            <a href="/ADAINT_RAAMAL/paginas/noticias.html">NOTICIAS</a>
+            <a href="#">Más ▾</a>
+        </div>
+    </nav>  
+   
+    <!-- Sección de Registro -->
+    <section class="registro">
+        <div class="registro-container">
+            <h2>Regístrate</h2>
+            <p>Únete a nuestra comunidad de voluntarios y marca la diferencia.</p>
+            
+            <div class="registro-content">
+                <!-- Espacio para Imagen -->
+                <div class="registro-img">
+                </div>
+                <!-- Formulario de Registro -->
+                <div class="registro-form">
+                    <form action="procesar_registro.php" method="POST">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+                        <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                        <button type="submit" class="btn-registrarse">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

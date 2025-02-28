@@ -1,0 +1,163 @@
+* Fuente y reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo con degradado azul fuerte a blanco */
+body {
+    background: linear-gradient(to bottom, #14e20c, #ffffff); /* Degradado de azul fuerte a blanco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 60px; /* Ajuste para que el contenido no quede debajo de la navbar */
+}
+
+/* Barra de Navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Fondo blanco para la barra de navegación */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilos para el logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;  /* Logo más pequeño */
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Menú */
+.navbar .menu {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Color de los enlaces */
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar .active {
+    background: #0c59e7; /* Azul fuerte en hover */
+    color: white;
+}
+
+/* Sección de NUESTROS COLABORADORES */
+.main-content {
+    position: relative;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.main-content .content {
+    z-index: 1;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white; /* Texto blanco */
+}
+
+/* Contenedor de las fundaciones */
+.fundaciones-container {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 50px; /* Asegura que el contenido no quede bajo la navbar */
+    padding: 50px 0; /* Sin fondo azul */
+}
+
+.fundacion {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    margin: 15px;
+    transition: transform 0.3s;
+}
+
+.fundacion:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen de cada fundación */
+.fundacion img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Títulos de las fundaciones */
+.fundacion h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Descripción de las fundaciones */
+.fundacion p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Botón de registro */
+.btn-registrarse {
+    width: 100%;
+    padding: 12px;
+    background: #d2f50f; /* Azul fuerte */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-registrarse:hover {
+    background: #380ecf; /* Azul más oscuro en hover */
+}
